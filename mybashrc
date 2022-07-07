@@ -1,0 +1,10 @@
+#/bin/bash
+
+# Please do sudo
+apt install nginx
+cp gunicorn.service /etc/systemd/system/
+systemctl start gunicorn
+systemctl enable gunicorn
+cp django_demo /etc/nginx/sites-available/
+ln -s /etc/nginx/sites-available/django_demo /etc/nginx/sites-enabled/
+usermod -a -G ubuntu www-data
