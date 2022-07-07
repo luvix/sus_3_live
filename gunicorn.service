@@ -10,8 +10,8 @@ ExecStart=/home/ubuntu/<프로젝트 경로>/<프로젝트 가상환경>/bin/gun
     --access-logfile gunicorn/gunicorn-access.log \
     --error-logfile gunicorn/gunicorn-error.log \
     --workers 3 \
-    --bind unix:/home/ubuntu/<프로젝트 경로>/gunicorn/django.sock \
-    <프로젝트 이름>.wsgi:application
+    --bind unix:/home/ubuntu/sus_3_live/gunicorn/django.sock \
+    sus_3_live.wsgi:application
 
 [Install]
 WantedBy=multi-user.target
