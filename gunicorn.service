@@ -5,8 +5,8 @@ After=network.target
 [Service]
 User=ubuntu
 Group=ubuntu
-WorkingDirectory=/home/ubuntu/<프로젝트 경로>/gunicorn
-ExecStart=/home/ubuntu/<프로젝트 경로>/<프로젝트 가상환경>/bin/gunicorn \
+WorkingDirectory=/home/ubuntu/sus_3_live/gunicorn
+ExecStart=/home/ubuntu/sus_3_live/venv_django/bin/gunicorn \
     --access-logfile gunicorn/gunicorn-access.log \
     --error-logfile gunicorn/gunicorn-error.log \
     --workers 3 \
