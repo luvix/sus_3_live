@@ -5,7 +5,7 @@ After=network.target
 [Service]
 User=ubuntu
 Group=ubuntu
-WorkingDirectory=/home/ubuntu/sus_3_live/gunicorn
+WorkingDirectory=/home/ubuntu/sus_3_live
 ExecStart=/home/ubuntu/sus_3_live/venv_django/bin/gunicorn \
     --access-logfile gunicorn/gunicorn-access.log \
     --error-logfile gunicorn/gunicorn-error.log \
